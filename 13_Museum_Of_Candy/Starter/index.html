@@ -83,7 +83,7 @@
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 subsection">
+            <div class="col-10 col-lg-8 subsection mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 src="imgs/lolli_icon.png"
@@ -105,12 +105,39 @@
         </div>
       </div>
       <div class="row align-items-center content">
+        <div class="col-md-6 text-center">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 subsection mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img
+                src="imgs/lolli_icon.png"
+                alt=""
+                class="d-none d-lg-inline"
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A,
+                porro ullam. Asperiores commodi molestiae tempora cupiditate sit
+                pariatur, earum quisquam nemo soluta facere corporis dolore nisi
+                distinctio blanditiis? Cum, aut. Natus, quo ducimus. Quo,
+                ratione laborum. Illo aspernatur eaque fuga aperiam asperiores
+                quas natus aut perferendis. Nulla, eveniet nam perspiciatis quam
+                soluta quasi corporis magni, similique provident, dicta optio
+                expedita.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="imgs/gumball.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row align-items-center content">
         <div class="col-md-6 order-2 order-md-1">
-          <img src="imgs/milk.png" alt="" class="img-fluid" />
+          <img src="imgs/sprinkles.png" alt="" class="img-fluid" />
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 subsection">
+            <div class="col-10 col-lg-8 subsection mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 src="imgs/lolli_icon.png"
@@ -149,5 +176,13 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
